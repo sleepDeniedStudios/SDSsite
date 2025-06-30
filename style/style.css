@@ -102,10 +102,10 @@ nav button.active {
 
 .progress-bar {
   height: 100%;
-  background: linear-gradient(to right, #0d72a9, #2b32b2);
+  background: linear-gradient(to right, #1F1C2C, #1F1C2C);
 }
 
 .progress-bar.full {
-  background: linear-gradient(to right, #0d72a9, #2b32b2);
+  background: linear-gradient(to right, #1F1C2C, #1F1C2C);
   box-shadow: 0 0 10px #4dbfff;
 }
