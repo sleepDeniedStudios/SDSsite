@@ -139,7 +139,7 @@ nav button.active {
   align-items: center;
   justify-content: center;
   height: 20px; /* keep same height as progress bar */
-  color: #ff5555; /* optional: red color for emphasis */
+  color: #ff5555;
   font-weight: bold;
   font-size: 0.9rem;
   position: relative;
