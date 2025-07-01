@@ -19,12 +19,15 @@ function showPage(id) {
   if (matchingButton) matchingButton.classList.add('active');
 }
 
-// Apply .full class to 100% progress bars
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll(".progress-bar").forEach(bar => {
-    const width = parseFloat(bar.style.width);
-    if (width >= 100) {
-      bar.classList.add("full");
-    }
-  });
+document.querySelectorAll('.progress-bar').forEach(bar => {
+  const widthStr = bar.style.width;
+  if (!widthStr) return;
+  const percent = parseInt(widthStr);
+
+  if (percent === 100) {
+    bar.classList.add('full');
+  } else {
+    bar.classList.remove('full');
+  }
 });
+

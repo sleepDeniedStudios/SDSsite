@@ -1,44 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Projects - sleepDenied Studios Roadmap</title>
   <link rel="stylesheet" href="extra/style.css" />
 </head>
+
 <body>
   <header>
     <h1>sleepDenied Studios Roadmap</h1>
-    <h2>The Hierarchy of Creation</h2>
+    <h2>The Hierarchy</h2>
   </header>
 
   <nav>
     <button onclick="location.href='index.html'" class="active">Projects</button>
-    <button onclick="location.href='small.html'">Small Games</button>
-    <button onclick="location.href='commercial.html'">Commercial</button>
+    <button onclick="location.href='games.html'">All Games</button>
     <button onclick="location.href='whatnext.html'">What's Next</button>
+    <button onclick="location.href='who.html'">Who Are We</button>
   </nav>
 
   <main>
-    <section id="projects" class="page active">
-      <h1>Projects</h1>
+    <section id="games" class="page active">
+      <h1>Active Projects</h1>
       <ul>
-        <li>
-          <strong>Island</strong> - The first ever test project.
+        <li data-project="Island">
+          <strong>Island</strong> - The first ever test project, I wouldn't call this a game...
           <div class="progress-container">
-            <div class="progress-bar full" style="width: 100%;"></div>
+            <div class="progress-bar" style="width: 100%;"></div>
           </div>
         </li>
-        <li>
-          <strong>Boxes</strong> - The follow-up of Project Island.
+
+        <li data-project="Boxes">
+          <strong>Boxes</strong> - The follow up of Project Island.
           <div class="progress-container">
-            <div class="progress-bar" style="width: 10%;"></div>
+            <div class="progress-bar" style="width: 8%;"></div>
+          </div>
+        </li>
+
+        <li data-project="But Why">
+          <strong>But Why</strong> - First ever story game
+          <div class="progress-container">
+            <div class="progress-bar" style="width: 65%;"></div>
+          </div>
+        </li>
+
+        <li data-project="Two">
+          <strong>Two</strong> - A narrative story game.
+          <div class="progress-container discontinued"><strong>DISCONTINUED</strong>
+            <div class="progress-bar" style="width: 0%;"></div>
+          </div>
+        </li>
+
+        <li data-project="Campfire">
+          <strong>Campfire</strong> - Keep the fire alive...
+          <div class="progress-container">
+            <div class="progress-bar" style="width: 0%;"></div>
+          </div>
+        </li>
+
+        <li data-project="Centrum">
+          <strong>Centrum Oculum</strong> - The first commercial game.
+          <div class="progress-container">
+            <div class="progress-bar" style="width: 0%;"></div>
           </div>
         </li>
       </ul>
+
     </section>
   </main>
 
   <script src="extra/script.js"></script>
 </body>
+
 </html>

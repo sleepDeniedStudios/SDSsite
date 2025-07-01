@@ -14,15 +14,25 @@
 
 body {
   font-family: var(--font);
-  background: linear-gradient(to bottom, #1489cca8, #2b32b2be);
+  background: linear-gradient(to bottom, #1F1C2C, #928DAB);
   color: var(--secondary);
   padding: 2rem;
   min-height: 100vh;
 }
 
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 header {
   text-align: center;
   margin-bottom: 3rem;
+}
+
+section {
+  margin-bottom: 2rem;
 }
 
 h1 {
@@ -53,7 +63,8 @@ li {
 }
 
 li:hover {
-  transform: scale(1.02);
+  transform: scale(1.005);
+  background-color: #313131;
 }
 
 .page {
@@ -62,6 +73,16 @@ li:hover {
 
 .page.active {
   display: block;
+}
+
+a.link {
+  color: #4FC3F7;
+  transition: color 0.3s ease;
+}
+
+a.link:hover,
+a.link:focus {
+  color: #def5ff;
 }
 
 nav {
@@ -74,6 +95,7 @@ nav {
 
 nav button {
   background-color: var(--accent);
+  font-size: 1.25rem;
   color: var(--secondary);
   padding: 0.5rem 1.2rem;
   border: none;
@@ -84,12 +106,13 @@ nav button {
 }
 
 nav button:hover {
-  transform: scale(1.05);
+  transform: scale(1.15);
 }
 
 nav button.active {
   background-color: var(--accent-light);
-  color: #000;
+  color: #ffffff;
+  transform: scale(1.05);
 }
 
 .progress-container {
@@ -102,10 +125,26 @@ nav button.active {
 
 .progress-bar {
   height: 100%;
-  background: linear-gradient(to right, #1F1C2C, #1F1C2C);
+  background: linear-gradient(to right, #2b32b2be, #4d54d7be);
 }
 
 .progress-bar.full {
-  background: linear-gradient(to right, #1F1C2C, #1F1C2C);
+  background: linear-gradient(to right, #2bb256be, #0a7d3abe);
   box-shadow: 0 0 10px #4dbfff;
+}
+
+.progress-container.discontinued {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20px; /* keep same height as progress bar */
+  color: #ff5555; /* optional: red color for emphasis */
+  font-weight: bold;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+.progress-container.discontinued .progress-bar {
+  display: none; /* hide the empty progress bar */
 }
